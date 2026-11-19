@@ -13,7 +13,7 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 # Uses GROQ_API_KEY from Streamlit Secrets
-llm = ChatGroq(model="llama-3.3-70b-versatile")
+llm = ChatGroq(model="openai/gpt-oss-120b")
 output_parser = StrOutputParser()
 chain = prompt | llm | output_parser
 
